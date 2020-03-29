@@ -34,7 +34,7 @@ for id in newIds:
 f.close()
 assert len(captions) == len(media)
 account_sid = 'ACd8275d7e6a468abba1dbf8086d6e6259'
-auth_token = '02aa9b5be4ca2449bda20c89819c50a9'
+auth_token = '01fc73e37c7c8e5ec33799c3d4df7415'
 client = Client(account_sid, auth_token)
 API_ENDPOINT = "https://api-ssl.bitly.com/v4/shorten"
 headers = {"Authorization": "Bearer 1c1960534c7f7cb5e9d4892237fdfa6d20be0de5", 'Content-Type': 'application/json'}
@@ -51,7 +51,7 @@ for i in range(len(media)):
             .create(
                 body=captions[i] + " VIDEO LINK: " + link,
                 from_='+12016763705',
-                to='+16176108187'
+                to='+18609900863'
             )
     else:
         client.messages \
@@ -59,5 +59,5 @@ for i in range(len(media)):
                 body=captions[i],
                 from_='+12016763705',
                 media_url=[media[i]],
-                to='+16176108187'
+                to='+18609900863'
             )
