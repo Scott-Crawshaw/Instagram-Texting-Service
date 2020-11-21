@@ -48,7 +48,8 @@ for acct in accounts:
 assert len(captions) == len(media)
 print(len(captions))
 account_sid = 'ACd8275d7e6a468abba1dbf8086d6e6259'
-auth_token = '01fc73e37c7c8e5ec33799c3d4df7415'
+keyFile = open("api_key.txt")
+auth_token = keyFile.readline()
 client = Client(account_sid, auth_token)
 API_ENDPOINT = "https://api-ssl.bitly.com/v4/shorten"
 headers = {"Authorization": "Bearer 1c1960534c7f7cb5e9d4892237fdfa6d20be0de5", 'Content-Type': 'application/json'}
