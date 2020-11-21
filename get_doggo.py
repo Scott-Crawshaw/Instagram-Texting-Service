@@ -52,7 +52,7 @@ keyFile = open("api_key.txt")
 auth_token = keyFile.readline()
 client = Client(account_sid, auth_token)
 API_ENDPOINT = "https://api-ssl.bitly.com/v4/shorten"
-headers = {"Authorization": "Bearer 1c1960534c7f7cb5e9d4892237fdfa6d20be0de5", 'Content-Type': 'application/json'}
+headers = {"Authorization": "Bearer REMOVED", 'Content-Type': 'application/json'}
 
 for i in range(len(media)):
     if media[i][0] == 'V':
